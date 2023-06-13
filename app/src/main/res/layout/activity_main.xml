@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#40739e"
+    android:background="@color/back_color"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -62,7 +62,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/c++_layout"
+            android:id="@+id/ccc_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -88,6 +88,7 @@
 
     </LinearLayout>
     <LinearLayout
+        android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -146,5 +147,21 @@
         </LinearLayout>
 
     </LinearLayout>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz"
+        android:layout_below="@id/layout2"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/round_back"/>
+
 
 </LinearLayout>
