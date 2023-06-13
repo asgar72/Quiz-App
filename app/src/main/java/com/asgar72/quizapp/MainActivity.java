@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout c_layout,ccc_layout,java_layout,android_layout;
-    Button btn_start;
+   private LinearLayout c_layout,ccc_layout,java_layout,android_layout;
+   private Button btn_start;
 
     String selectedTopicName = "";
     @Override
@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         java_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 selectedTopicName="Java";
                 java_layout.setBackgroundResource(R.drawable.round_back_all);
                 ccc_layout.setBackgroundResource(R.drawable.round_back);
@@ -67,8 +66,7 @@ public class MainActivity extends AppCompatActivity {
         android_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                selectedTopicName="C";
+                selectedTopicName="android";
                 android_layout.setBackgroundResource(R.drawable.round_back_all);
                 c_layout.setBackgroundResource(R.drawable.round_back);
                 ccc_layout.setBackgroundResource(R.drawable.round_back);
@@ -88,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(MainActivity.this,QuizActivity.class);
                     intent.putExtra("selectedTopic",selectedTopicName);
                     startActivity(intent);
+                    finish();
 
                 }
             }
