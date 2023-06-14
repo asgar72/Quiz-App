@@ -9,159 +9,169 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/img1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/quiz1"
-        android:id="@+id/img1"/>
+        android:src="@drawable/quiz1" />
+
     <TextView
         android:id="@+id/choosetopic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_below="@id/img1"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:textSize="15sp"
         android:text="Choose topic"
-        android:textColor="#99ffff"/>
+        android:textColor="#99ffff"
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/choosetopic"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
         android:weightSum="2">
-        
+
         <LinearLayout
             android:id="@+id/c_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="20dp"
-            android:background="@drawable/round_back"
             android:layout_marginEnd="5dp"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:background="@drawable/round_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/c"/>
+                android:src="@drawable/c" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="C"
                 android:textColor="#CC000000"
                 android:textSize="18sp"
-                android:text="C"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/ccc_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="20dp"
-            android:background="@drawable/round_back"
             android:layout_marginStart="5dp"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:background="@drawable/round_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/ccc"/>
+                android:src="@drawable/ccc" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="C++"
                 android:textColor="#CC000000"
                 android:textSize="18sp"
-                android:text="C++"
-                android:layout_marginTop="5dp"
 
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/choosetopic"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
         android:weightSum="2">
 
         <LinearLayout
             android:id="@+id/java_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="20dp"
-            android:background="@drawable/round_back"
             android:layout_marginEnd="5dp"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:background="@drawable/round_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/java"/>
+                android:src="@drawable/java" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Java"
                 android:textColor="#CC000000"
                 android:textSize="18sp"
-                android:text="Java"
-                android:layout_marginTop="5dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/android_layout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="20dp"
-            android:background="@drawable/round_back"
             android:layout_marginStart="5dp"
-            android:orientation="vertical">
+            android:layout_weight="1"
+            android:background="@drawable/round_back"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@drawable/android"/>
+                android:src="@drawable/android" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#CC000000"
-                android:textSize="18sp"
                 android:layout_marginTop="5dp"
                 android:text="Android"
-                android:textStyle="bold"/>
+                android:textColor="#CC000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
 
     </LinearLayout>
-    
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Quiz"
         android:layout_below="@id/layout2"
+        android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:textColor="@color/black"
+        android:background="@drawable/round_back"
         android:gravity="center"
         android:padding="10dp"
-        android:layout_gravity="center"
+        android:text="Start Quiz"
+        android:textColor="@color/black"
         android:textSize="16sp"
-        android:textStyle="bold"
-        android:background="@drawable/round_back"/>
+        android:textStyle="bold" />
 
 
 </LinearLayout>

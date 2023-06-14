@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class QuizResults extends AppCompatActivity {
 
-    TextView correctAnswer,incorrectAnswer;
+    TextView correctAnswer, incorrectAnswer;
     AppCompatButton startNewQuiz;
 
     @Override
@@ -19,10 +19,10 @@ public class QuizResults extends AppCompatActivity {
         setContentView(R.layout.activity_quiz_results);
         startNewQuiz = findViewById(R.id.startNewQuiz);
         correctAnswer = findViewById(R.id.correctAnswer);
-        incorrectAnswer=findViewById(R.id.incorrectAnswer);
+        incorrectAnswer = findViewById(R.id.incorrectAnswer);
 
-        final  int  getCorrectAnswer = getIntent().getIntExtra("correct",0);
-        final  int getIncorrectAnswer = getIntent().getIntExtra("incorrect",0);
+        final int getCorrectAnswer = getIntent().getIntExtra("correct", 0);
+        final int getIncorrectAnswer = getIntent().getIntExtra("incorrect", 0);
 
         correctAnswer.setText(String.valueOf(getCorrectAnswer));
         incorrectAnswer.setText(String.valueOf(getIncorrectAnswer));
@@ -30,7 +30,7 @@ public class QuizResults extends AppCompatActivity {
         startNewQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(QuizResults.this,MainActivity.class);
+                Intent intent = new Intent(QuizResults.this, MainActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -39,7 +39,7 @@ public class QuizResults extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(QuizResults.this,MainActivity.class);
+        Intent intent = new Intent(QuizResults.this, MainActivity.class);
         startActivity(intent);
         finish();
     }
